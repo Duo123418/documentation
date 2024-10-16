@@ -20,6 +20,26 @@ Installation
    3. Make sure to enable GPU support if you want the installed ExApps to be able to use the GPU
 
 3. You can now install ExApps from the Nextcloud Appstore by clicking "Install" on the respective app in the AppAPI apps page.
+4. You can enable an installed External App using the `occ` command:
+
+```
+occ app <app-id>
+```
+
+For example, to enable the `app_api` app, use the following command:
+
+```
+occ app <app-id>
+```
+
+If you want to enable the app for a specific group, use the `--groups` option:
+
+```
+occ app app_api --groups=admin
+```
+
+This will enable the app only for the `admin` group.
+
 
 FAQ
 ---
